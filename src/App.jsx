@@ -1,13 +1,13 @@
-import './App.css'
-import NavBar from './components/NavBar';
+import "./App.css";
+import NavBar from "./components/NavBar";
 function App() {
-
-
   return (
     <>
-     <NavBar/>
+      <div className="">
+        <NavBar />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
