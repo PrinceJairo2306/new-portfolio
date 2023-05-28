@@ -9,6 +9,8 @@ export default {
       fontFamily: {
         'poppins' : ['Poppins', 'sans-serif']
       },
+      resonsive:true,
+      screens: { 'sm': { 'max': '640px' } },
     },
   },
   plugins: [],
