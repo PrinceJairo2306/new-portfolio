@@ -2,6 +2,12 @@ import "./NavBar.css";
 import myLogo from "../../public/prince_logo.png";
 import { useState, useEffect } from "react";
 import { AiOutlineCopyright } from "react-icons/ai";
+import { GrLinkedin } from "react-icons/gr";
+import { GrFacebook } from "react-icons/gr";
+import { GrTwitter } from "react-icons/gr";
+import { GrMail } from "react-icons/gr";
+import { GrGithub } from "react-icons/gr";
+
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [ismenuFinishedOpenning, setIsMenuFinishedOpenning] = useState(false);
@@ -54,7 +60,7 @@ const NavBar = () => {
 
           {/*the hamburger*/}
           <button
-            className="menu animate-pulse m-3 z-10 "
+            className="menu  m-3 z-10 "
             onClick={() => {
               document.querySelector(".menu").classList.toggle("opened");
               document
@@ -107,46 +113,66 @@ const NavBar = () => {
       </div>
       {/* curtain */}
 
+      {/* logos */}
+      <div className="sm:hidden absolute right-5 bottom-20 text-orange-900 space-y-7">
+        <div className="">
+          <GrLinkedin className="text-3xl opacity-60 hover:opacity-100" />
+        </div>
+        <div>
+          <GrTwitter className="text-3xl opacity-60 hover:opacity-100" />
+        </div>
+        <div>
+          <GrFacebook className="text-3xl opacity-60 hover:opacity-100" />
+        </div>
+        <div>
+          <GrGithub className="text-3xl opacity-60 hover:opacity-100" />
+        </div>
+        <div>
+          <GrMail className="text-3xl opacity-60 hover:opacity-100" />
+        </div>
+      </div>
+      {/* logos */}
+
       {/*menu links*/}
       <div
-        className={`absolute m-auto left-0 right-0 top-56 text-center ${
+        className={`absolute m-auto left-0 right-0 top-56 text-center  ${
           isMenuOpen ? "text-orange-500" : "hidden text-black"
         }`}
       >
         <div>
           <div
-            className={`menu-titles font-poppins   text-center  space-y-12 text-4xl sm:text-3xl`}
+            className={`mx-auto menu-titles font-poppins   text-center  space-y-12 text-4xl sm:text-3xl`}
           >
             <div
-              className={`opacity-30 font-normal hover:font-medium hover:animate-pulse hover:opacity-60 ${
+              className={`opacity-60 font-normal hover:font-medium hover:animate-pulse hover:opacity-30 ${
                 isMenuOpen ? "about" : ""
               }`}
             >
               <span className="">{ismenuFinishedOpenning ? "about" : ""}</span>
             </div>
             <div
-              className={` opacity-30 font-normal hover:font-medium hover:animate-pulse hover:opacity-60 ${
+              className={` opacity-60 font-normal hover:font-medium hover:animate-pulse hover:opacity-30 ${
                 isMenuOpen ? "projects" : ""
               }`}
             >
               <span>{ismenuFinishedOpenning ? "projects" : ""}</span>
             </div>
             <div
-              className={`opacity-30 font-normal hover:font-medium hover:animate-pulse hover:opacity-60 ${
+              className={`opacity-60 font-normal hover:font-medium hover:animate-pulse hover:opacity-30 ${
                 isMenuOpen ? "experience" : ""
               }`}
             >
               <span>{ismenuFinishedOpenning ? "experience" : ""}</span>
             </div>
             <div
-              className={`opacity-30 font-normal hover:font-medium hover:animate-pulse hover:opacity-60 ${
+              className={`opacity-60 font-normal hover:font-medium hover:animate-pulse hover:opacity-30 ${
                 isMenuOpen ? "contact" : ""
               }`}
             >
               <span>{ismenuFinishedOpenning ? "contact" : ""}</span>
             </div>
             <div
-              className={`pb-1 opacity-30 font-normal hover:font-medium hover:animate-pulse hover:opacity-60 ${
+              className={`pb-1 opacity-60 font-normal hover:font-medium hover:animate-pulse hover:opacity-30 ${
                 isMenuOpen ? "blogs" : ""
               }`}
             >
@@ -159,19 +185,19 @@ const NavBar = () => {
       <div
         className={`${
           isMenuOpen ? "" : "hidden "
-        }copyright text-orange-500 bottom-5 absolute text-center right-0 left-0`}
+        }copyright text-orange-400 bottom-5 absolute text-center right-0 left-0`}
       >
         <div
           className={`${
-            ismenuFinishedOpenning ? "c-message" : ""
-          } font-thin flex flex-col text-sm ${ismenuFinishedOpenning?"opacity-100":"opacity-0"}`}
+            isMenuFinishedDelayDone ? "c-message" : ""
+          } font-thin flex flex-col text-sm opacity-40`}
         >
-          {ismenuFinishedOpenning ? (
+          {isMenuFinishedDelayDone ? (
             <>
               <span>
                 Designed and Made with{" "}
-                <span className="text-orange-400">Passion</span> and{" "}
-                <span className="text-orange-400">Love</span>
+                <span className="text-orange-400">Passion and </span>
+                <span className="text-orange-400"> Love</span>
               </span>
               <span>
                 Prince Jairo Fortuna{" "}
@@ -179,7 +205,7 @@ const NavBar = () => {
                   style={{ display: "inline-block", verticalAlign: "middle" }}
                 >
                   <AiOutlineCopyright />
-                </div>
+                </div>{" "}
                 2022
               </span>
             </>
