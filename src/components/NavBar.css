@@ -95,5 +95,20 @@
     }
   }
 
+
+
+  .logos span {
+    animation: reveal2 3s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+
+  @keyframes reveal2 {
+    0% {
+      transform: translate(180%,0);
+    }
+    100% {
+      transform: translate(0,0);
+    }
+  }
+
   
   

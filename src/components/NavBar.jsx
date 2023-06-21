@@ -114,28 +114,51 @@ const NavBar = () => {
       {/* curtain */}
 
       {/* logos */}
-      <div className="sm:hidden absolute right-5 bottom-20 text-orange-900 space-y-7">
-        <div className="">
-          <GrLinkedin className="text-3xl opacity-60 hover:opacity-100" />
+      {/* <div className="logos-container">
+        <div
+          className={`logos sm:hidden absolute right-5 bottom-20 text-orange-900 space-y-7 z-20`}
+        >
+          
         </div>
-        <div>
-          <GrTwitter className="text-3xl opacity-60 hover:opacity-100" />
-        </div>
-        <div>
-          <GrFacebook className="text-3xl opacity-60 hover:opacity-100" />
-        </div>
-        <div>
-          <GrGithub className="text-3xl opacity-60 hover:opacity-100" />
-        </div>
-        <div>
-          <GrMail className="text-3xl opacity-60 hover:opacity-100" />
+      </div> */}
+
+      <div
+        className={`${
+          isMenuOpen ? "" : "hidden "
+        }logos-container sm:hidden absolute right-5 bottom-20 text-orange-900 z-20 `}
+      >
+        <div
+          className={`${
+            isMenuFinishedDelayDone ? "logos " : ""
+          } font-thin flex flex-col text-sm opacity-40 space-y-7 `}
+        >
+          {isMenuFinishedDelayDone ? (
+            <>
+              <span>
+                <GrLinkedin className="text-3xl opacity-60 hover:opacity-100" />
+              </span>
+              <span>
+                <GrTwitter className="text-3xl opacity-60 hover:opacity-100" />
+              </span>
+              <span>
+                <GrFacebook className="text-3xl opacity-60 hover:opacity-100" />
+              </span>
+              <span>
+                <GrGithub className="text-3xl opacity-60 hover:opacity-100" />
+              </span>
+              <span>
+                <GrMail className="text-3xl opacity-60 hover:opacity-100" />
+              </span>
+            </>
+          ) : null}
         </div>
       </div>
+
       {/* logos */}
 
       {/*menu links*/}
       <div
-        className={`absolute m-auto left-0 right-0 top-56 text-center  ${
+        className={`absolute left-0 right-0 sm:top-1/2 sm:transform sm:-translate-y-1/2 md:top-1/2 md:transform md:-translate-y-1/2 text-center ${
           isMenuOpen ? "text-orange-500" : "hidden text-black"
         }`}
       >
