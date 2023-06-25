@@ -26,7 +26,10 @@ const Menu = () => {
   return (
     <>
       <HamburgerBtn onClickHandler={menuClickHandler} />
-      <CurtainEffect isMenuOpen={isMenuOpen} />
+      <CurtainEffect
+        isMenuOpen={isMenuOpen}
+        ismenuFinishedOpenning={ismenuFinishedOpenning}
+      />
       <Icons
         isMenuOpen={isMenuOpen}
         isMenuFinishedDelayDone={isMenuFinishedDelayDone}

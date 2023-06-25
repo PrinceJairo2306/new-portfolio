@@ -11,7 +11,7 @@ const Hamburger = (props) => {
   };
 
   return (
-    <div className="absolute z-50  top-0 right-0 md:top-2 md:right-2">
+    <div className="absolute z-50  top-1 right-0 md:top-5 md:right-2">
       <button
         className="menu  m-3 z-10 "
         onClick={onClickHandler}
