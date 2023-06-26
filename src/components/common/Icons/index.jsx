@@ -9,12 +9,12 @@ const Icons = (props) => {
         <div
         className={`${
           props.isMenuOpen ? "" : "hidden "
-        }logos-container sm:hidden absolute right-5 bottom-20 text-orange-900 z-20 `}
+        }logos-container sm:hidden absolute right-5 bottom-20 text-c_Orange z-20 `}
       >
         <div
           className={`${
             props.isMenuFinishedDelayDone ? "logos " : ""
-          } font-thin flex flex-col text-sm opacity-40 space-y-7 `}
+          } font-thin flex flex-col text-sm opacity-800 space-y-7 `}
         >
           {props.isMenuFinishedDelayDone ? (
             <>

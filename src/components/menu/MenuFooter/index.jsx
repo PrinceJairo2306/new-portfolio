@@ -5,19 +5,19 @@ const Footer = (props) => {
     <div
       className={`${
         props.isMenuOpen ? "" : "hidden "
-      }copyright text-orange-400 bottom-5 absolute text-center right-0 left-0`}
+      }copyright text-c_Orange bottom-5 absolute text-center right-0 left-0`}
     >
       <div
         className={`${
           props.isMenuFinishedDelayDone ? "c-message" : ""
-        } font-thin flex flex-col text-sm opacity-40`}
+        } font-thin flex flex-col text-sm `}
       >
         {props.isMenuFinishedDelayDone ? (
           <>
             <span>
               Designed and Made with{" "}
-              <span className="text-orange-400">Passion and </span>
-              <span className="text-orange-400"> Love</span>
+              <span className="text-c_White">Passion and </span>
+              <span className="text-c_White"> Love</span>
             </span>
             <span>
               Prince Jairo Fortuna{" "}
