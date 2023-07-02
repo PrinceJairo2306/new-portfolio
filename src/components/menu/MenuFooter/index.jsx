@@ -5,7 +5,7 @@ const Footer = (props) => {
     <div
       className={`${
         props.isMenuOpen ? "" : "hidden "
-      }copyright text-c_Orange bottom-5 absolute text-center right-0 left-0`}
+      }copyright text-c_Orange bottom-5 fixed text-center right-0 left-0`}
     >
       <div
         className={`${

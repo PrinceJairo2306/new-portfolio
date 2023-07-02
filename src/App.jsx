@@ -1,11 +1,12 @@
+import React, { useState } from "react";
 import "./App.css";
-import Main from './components/sections'
+import Main from "./components/sections";
 
 function App() {
   return (
     <>
       <div className="">
-          <Main/>
+        <Main />
       </div>
     </>
   );

@@ -47,13 +47,13 @@ const links = (props) => {
   };
   return (
     <div
-      className={`absolute flex justify-center items-center left-0 right-0 bottom-0 top-0 text-center ${
+      className={`fixed flex justify-center items-center left-0 right-0 bottom-0 top-0 text-center ${
         props.isMenuOpen ? "text-c_Orange" : "hidden text-black"
       }`}
     >
-      <div className="font-semibold ">
+      <div className="font-black ">
         <div
-          className={`p-10 text-5xl mx-auto menu-titles font-poppins   text-center  space-y-12 sm:text-3xl`}
+          className={`p-10 text-4xl md:text-5xl 2xl:text-6xl mx-auto menu-titles font-poppins   text-center  space-y-12 `}
         >
           <div className={`opacity-60  ${props.isMenuOpen ? "about" : ""}`}>
             <div className="flex items-center justify-center">

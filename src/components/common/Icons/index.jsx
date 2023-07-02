@@ -9,7 +9,7 @@ const Icons = (props) => {
         <div
         className={`${
           props.isMenuOpen ? "" : "hidden "
-        }logos-container sm:hidden absolute right-5 bottom-20 text-c_Orange z-20 `}
+        }logos-container hidden md:block fixed right-5 bottom-20 text-c_Orange z-20 `}
       >
         <div
           className={`${
