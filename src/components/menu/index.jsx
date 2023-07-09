@@ -1,15 +1,16 @@
 import "./menu.css";
 
-import { useState } from "react";
+import { useState, useContext } from "react";
 
 import HamburgerBtn from "./Hamburger";
 import CurtainEffect from "./Curtain";
 import Icons from "../common/Icons";
 import Links from "./MenuLinks";
 import Footer from "./MenuFooter";
+import { MenuContext } from "../../store/MenuContext";
 
 const Menu = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);
   const [ismenuFinishedOpenning, setIsMenuFinishedOpenning] = useState(false);
   const [isMenuFinishedDelayDone, setIsMenuFinishedDelayDone] = useState(false);
 

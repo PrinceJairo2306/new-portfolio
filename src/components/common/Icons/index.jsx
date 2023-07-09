@@ -8,12 +8,12 @@ const Icons = (props) => {
     return ( 
         <div
         className={`${
-          props.isMenuOpen ? "" : "hidden "
+          props.isMenuOpen ? "" : " "
         }logos-container hidden md:block fixed right-5 bottom-20 text-c_Orange z-20 `}
       >
         <div
           className={`${
-            props.isMenuFinishedDelayDone ? "logos " : ""
+            props.isMenuOpen ? "logos " : "hidden"
           } font-thin flex flex-col text-sm opacity-800 space-y-7 `}
         >
           {props.isMenuFinishedDelayDone ? (
