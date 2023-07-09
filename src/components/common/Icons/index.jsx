@@ -7,7 +7,7 @@ import { GrGithub } from "react-icons/gr";
 const Icons = (props) => {
     return ( 
         <div
-        className={`${
+        className={`z-40 ${
           props.isMenuOpen ? "" : " "
         }logos-container hidden md:block fixed right-5 bottom-20 text-c_Orange z-20 `}
       >

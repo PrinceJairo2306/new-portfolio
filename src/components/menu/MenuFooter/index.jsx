@@ -3,7 +3,7 @@ import { AiOutlineCopyright } from "react-icons/ai";
 const Footer = (props) => {
   return (
     <div
-      className={`${
+      className={`z-40 ${
         props.isMenuOpen ? "" : "hidden "
       }copyright text-c_Orange bottom-5 fixed text-center right-0 left-0`}
     >
