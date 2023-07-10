@@ -10,7 +10,7 @@ const Footer = (props) => {
       <div
         className={`${
           props.isMenuFinishedDelayDone ? "c-message" : ""
-        } font-thin flex flex-col text-sm `}
+        } font-thin flex flex-col text-[12px] md:text-[12px] `}
       >
         {props.isMenuFinishedDelayDone ? (
           <>

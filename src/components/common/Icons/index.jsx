@@ -19,19 +19,19 @@ const Icons = (props) => {
           {props.isMenuFinishedDelayDone ? (
             <>
               <span>
-                <GrLinkedin className="text-3xl opacity-60 hover:opacity-100" />
+                <GrLinkedin className="text-2xl opacity-60 hover:opacity-100" />
               </span>
               <span>
-                <GrTwitter className="text-3xl opacity-60 hover:opacity-100" />
+                <GrTwitter className="text-2xl opacity-60 hover:opacity-100" />
               </span>
               <span>
-                <GrFacebook className="text-3xl opacity-60 hover:opacity-100" />
+                <GrFacebook className="text-2xl opacity-60 hover:opacity-100" />
               </span>
               <span>
-                <GrGithub className="text-3xl opacity-60 hover:opacity-100" />
+                <GrGithub className="text-2xl opacity-60 hover:opacity-100" />
               </span>
               <span>
-                <GrMail className="text-3xl opacity-60 hover:opacity-100" />
+                <GrMail className="text-2xl opacity-60 hover:opacity-100" />
               </span>
             </>
           ) : null}

@@ -17,23 +17,26 @@ const About = (props) => {
   const { isMenuOpen } = useContext(MenuContext);
   const { isLastCurtainDone } = useContext(MenuContext);
 
-
   return (
     <>
-    
       {/* <AboutfirstSection isMenuOpen={isMenuOpen} /> */}
-      
+
       <div className=" bg-c_Black w-screen h-screen">
-      <div className={`${isLastCurtainDone ? "" : ""}`}>
-          <div className=" font-poppins text-c_White md:p-10">
-            <div className=" md:w-1/4 absolute bottom-20 ">
-              <p className=" pb-1"> Hello, The name is </p>
-              <p></p>
-              <div className="text-6xl font-bold">
-                <h1>PRINCE JAIRO </h1>
-                <span className="text-8xl text-c_Orange">FORTUNA.</span>
+        <div>
+          <div className="font-poppins text-c_White md:p-10">
+            <div className="w-11/12 mx-auto pt-24  md:w-1/4 md:absolute md:bottom-5 ">
+              <div className="hidden">
+                <img src={DisplayPicture} alt="" />
               </div>
-              <p className="text-c_Orange font-semibold">Software Developer</p>
+              <p className=""> Hello, The name is </p>
+              <p></p>
+              <div className="text-3xl md:text-4xl font-bold">
+                <h1>PRINCE JAIRO </h1>
+                <span className="text-[56px] md:text-6xl text-c_Orange">
+                  FORTUNA.
+                </span>
+              </div>
+              <p className="text-base text-c_Orange font-extrabold">Software Developer</p>
 
               <div className="space-y-6 pt-2">
                 <p className="text-sm w-3/4">
@@ -47,7 +50,7 @@ const About = (props) => {
                   Get in touch!
                 </button>
 
-                <div className="text-2xl text-c_Orange flex justify-between  w-44">
+                <div className="text-2xl text-c_Orange flex justify-between w-40 md:w-44">
                   <span>
                     <GrLinkedin className="" />
                   </span>
@@ -83,12 +86,12 @@ const About = (props) => {
           </div>
 
           {/* blobs */}
-          <div className="bottom-0 -left-36 absolute  flex items-center justify-center px-16 ">
+          <div className="bottom-5 -left-36 absolute  flex items-center justify-center px-16 ">
             {/* rounded-full filter opacity-50  blur-xl  */}
             <div className=" w-full max-w-lg">
               {/* <div class="absolute top-0 -left-4 w-72 h-72 bg-orange-900  animate-blob"></div>
             <div class="absolute top-0 -right-4 w-72 h-72 bg-orange-900 rounded-full  filter opacity-50  blur-xl   animate-blob animation-delay-2000"></div> */}
-              <div className="blur-3xl  w-[600px] h-[600px]  opacity-30 bg-c_White rounded-full  filter    animate-blob animation-delay-4000"></div>
+              <div className="blur-md  md:w-[450px] md:h-[450px]  opacity-10 bg-c_White rounded-full  filter    animate-blob animation-delay-4000"></div>
             </div>
           </div>
           {/* blobs */}

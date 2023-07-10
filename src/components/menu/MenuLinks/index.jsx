@@ -53,14 +53,14 @@ const links = (props) => {
     >
       <div className="font-black ">
         <div
-          className={`p-10 text-4xl md:text-5xl 2xl:text-6xl mx-auto menu-titles font-poppins   text-center  space-y-12 `}
+          className={`p-10 text-3xl md:text-4xl 2xl:text-6xl mx-auto menu-titles font-poppins   text-center space-y-6 md:space-y-12 `}
         >
           <div className={`opacity-60  ${props.isMenuOpen ? "about" : ""}`}>
             <div className="flex items-center justify-center">
               <div className="relative">
                 {isHoveringAbout && (
                   <div className="absolute left-[-40px] top-[50%] transform translate-y-[-50%]">
-                    <GiPlainCircle className="text-3xl sm:text-xl" />
+                    <GiPlainCircle className="text-xl md:text-xl " />
                   </div>
                 )}
                 <span
@@ -79,7 +79,7 @@ const links = (props) => {
               <div className="relative">
                 {isHoveringProjects && (
                   <div className="absolute left-[-40px] top-[50%] transform translate-y-[-50%]">
-                    <GiPlainCircle className="text-3xl sm:text-xl" />
+                    <GiPlainCircle className="text-xl " />
                   </div>
                 )}
                 <span
@@ -100,7 +100,7 @@ const links = (props) => {
               <div className="relative">
                 {isHoveringExperience && (
                   <div className="absolute left-[-40px] top-[50%] transform translate-y-[-50%]">
-                    <GiPlainCircle className="text-3xl sm:text-xl" />
+                    <GiPlainCircle className="text-xl " />
                   </div>
                 )}
                 <span
@@ -119,7 +119,7 @@ const links = (props) => {
               <div className="relative">
                 {isHoveringContacts && (
                   <div className="absolute left-[-40px] top-[50%] transform translate-y-[-50%]">
-                    <GiPlainCircle className="text-3xl sm:text-xl" />
+                    <GiPlainCircle className="text-xl " />
                   </div>
                 )}
                 <span
@@ -138,7 +138,7 @@ const links = (props) => {
               <div className="relative">
                 {isHoveringBlogs && (
                   <div className="absolute left-[-40px] top-[50%] transform translate-y-[-50%]">
-                    <GiPlainCircle className="text-3xl sm:text-xl" />
+                    <GiPlainCircle className="text-xl " />
                   </div>
                 )}
                 <span
