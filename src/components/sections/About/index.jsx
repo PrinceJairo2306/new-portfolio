@@ -1,5 +1,5 @@
 import LogoImage from "../../common/Logo";
-import DisplayPicture from "../../../assets/profile_in_pofolio-1.jpg";
+import DisplayPicture from "../../../assets/nobackgroundsquare.jpg.png";
 import { useRef, useEffect, useContext, useState } from "react";
 import "../main.scss";
 import { gsap } from "gsap";
@@ -22,13 +22,12 @@ const About = (props) => {
       {/* <AboutfirstSection isMenuOpen={isMenuOpen} /> */}
 
       <div className=" bg-c_Black w-screen h-screen">
-        <div>
-          <div className="font-poppins text-c_White md:p-10">
-            <div className="w-11/12 mx-auto pt-24  md:w-1/4 md:absolute md:bottom-5 ">
-              <div className="hidden">
-                <img src={DisplayPicture} alt="" />
-              </div>
-              <p className=""> Hello, The name is </p>
+        {/* side content */}
+        <div className="absolute pt-[15%] w-10/12 ">
+          {/* intro */}
+          <div className="w-11/12  mx-auto items-center font-poppins flex  text-c_White ">
+            <div className="w-11/12  md:w-1/4  ">
+              <p className=""> Hello, the name is </p>
               <p></p>
               <div className="text-3xl md:text-4xl font-bold">
                 <h1>PRINCE JAIRO </h1>
@@ -36,7 +35,9 @@ const About = (props) => {
                   FORTUNA.
                 </span>
               </div>
-              <p className="text-base text-c_Orange font-extrabold">Software Developer</p>
+              <p className="text-base text-c_Orange font-extrabold">
+                Software Developer
+              </p>
 
               <div className="space-y-6 pt-2">
                 <p className="text-sm w-3/4">
@@ -68,13 +69,30 @@ const About = (props) => {
                   </span>
                 </div>
               </div>
-
-              {/* <p className="text-gray-500">
-              I am a Full-Stack Coder who specializes in Web Development.
-              Recently, I have also taken an interest in studying UX, aiming to
-              enhance my skills in that area.
-            </p> */}
             </div>
+            {/* image */}
+            <div className="z-10 relative top-10 -left-32">
+              <img
+                className="w-[250px]  rounded-[100%]"
+                src={DisplayPicture}
+                alt=""
+              />
+            </div>
+            {/* image */}
+
+            <div>
+              {/* blobs */}
+              {/* <div class="absolute top-0 -left-4 w-72 h-72 bg-orange-900  animate-blob"></div>
+            <div class="absolute top-0 -right-4 w-72 h-72 bg-orange-900 rounded-full  filter opacity-50  blur-xl   animate-blob animation-delay-2000"></div> */}
+              {/* rounded-full filter opacity-50  blur-xl  */}
+              <div className="z-0 relative top-16 -left-80">
+                <div className="">
+                  <div className=" md:w-[150px] md:h-[150px] opacity-100 bg-c_White rounded-full  filter    animate-blob animation-delay-4000"></div>
+                </div>
+              </div>
+              {/* blobs */}
+            </div>
+
             {/* content */}
             {/* <div className="w-1/4">
             I`ve been coding professionally for 7 years now and currently
@@ -84,18 +102,33 @@ const About = (props) => {
             tea coffee .
           </div> */}
           </div>
+          {/* intro */}
+        </div>
 
-          {/* blobs */}
-          <div className="bottom-5 -left-36 absolute  flex items-center justify-center px-16 ">
-            {/* rounded-full filter opacity-50  blur-xl  */}
-            <div className=" w-full max-w-lg">
-              {/* <div class="absolute top-0 -left-4 w-72 h-72 bg-orange-900  animate-blob"></div>
-            <div class="absolute top-0 -right-4 w-72 h-72 bg-orange-900 rounded-full  filter opacity-50  blur-xl   animate-blob animation-delay-2000"></div> */}
-              <div className="blur-md  md:w-[450px] md:h-[450px]  opacity-10 bg-c_White rounded-full  filter    animate-blob animation-delay-4000"></div>
+        {/* side content */}
+        {/* main content */}
+        <div>
+          <div className="py-12 w-[65%] ml-auto font-poppins text-c_White">
+            <div className="space-y-14">
+              <div>
+                <h1 className="text-3xl font-semibold">ABOUT</h1>
+                <p className="pt-3 pl-5  opacity-95 w-11/12 indent-10 text-justify">
+                  Currently based in the Philippines, I am a full-stack
+                  developer who specializes in web development. You'll usually
+                  find me reading manga and manhwa or browsing tech-related
+                  stuff on the internet. If you have any cool web-related ideas,
+                  let's make them happen! I love exploring and executing new
+                  things. Recently, I've also taken an interest in studying UX,
+                  with the goal of enhancing my skills in that area.
+                </p>
+              </div>
+              <div>
+                <h1 className="text-3xl font-semibold">ARSENAL</h1>
+              </div>
             </div>
           </div>
-          {/* blobs */}
         </div>
+        {/* main content */}
       </div>
     </>
   );
