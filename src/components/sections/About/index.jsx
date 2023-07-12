@@ -11,6 +11,20 @@ import { GrTwitter } from "react-icons/gr";
 import { GrMail } from "react-icons/gr";
 import { GrGithub } from "react-icons/gr";
 
+import { GrReactjs } from "react-icons/gr";
+import { SiRedux } from "react-icons/si";
+import { SiJavascript } from "react-icons/si";
+import { SiJquery } from "react-icons/si";
+
+import { SiLaravel } from "react-icons/si";
+import { DiYii } from "react-icons/di";
+import { FaNodeJs } from "react-icons/fa";
+import { SiPhp } from "react-icons/si";
+
+import { SiMicrosoftsqlserver } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+import { DiFirebase } from "react-icons/di";
+
 import AboutfirstSection from "./FirstSection";
 
 const About = (props) => {
@@ -108,22 +122,92 @@ const About = (props) => {
         {/* side content */}
         {/* main content */}
         <div>
-          <div className="py-12 w-[65%] ml-auto font-poppins text-c_White">
+          <div className="py-12 w-[55%]  pt-20  ml-[40%] font-poppins text-c_White">
             <div className="space-y-14">
               <div>
-                <h1 className="text-3xl font-semibold">ABOUT</h1>
-                <p className="pt-3 pl-5  opacity-95 w-11/12 indent-10 text-justify">
-                  Currently based in the Philippines, I am a full-stack
-                  developer who specializes in web development. You'll usually
-                  find me reading manga and manhwa or browsing tech-related
-                  stuff on the internet. If you have any cool web-related ideas,
-                  let's make them happen! I love exploring and executing new
-                  things. Recently, I've also taken an interest in studying UX,
-                  with the goal of enhancing my skills in that area.
-                </p>
+                <h1 className="text-3xl font-semibold pb-2 text-right">
+                  ABOUT
+                </h1>
+                <div className="bg-[#1a1a1a] rounded">
+                  <p className=" mx-auto  py-5  opacity-95 w-11/12 indent-10 text-justify">
+                    Currently based in the Philippines, I am a full-stack
+                    developer who specializes in web development. If not coding,
+                    you'll usually find me reading manga and manhwa or browsing
+                    tech-related stuff on the internet. If you have any cool
+                    web-related ideas, let's make them happen! I love exploring
+                    and executing new things. Recently, I've also taken an
+                    interest in studying UX, with the goal of enhancing my
+                    skills in that area.
+                  </p>
+                </div>
               </div>
               <div>
-                <h1 className="text-3xl font-semibold">ARSENAL</h1>
+                <h1 className="text-3xl font-semibold pb-2 text-right ">
+                  ARSENAL
+                </h1>
+                <div className="bg-[#1a1a1a] rounded">
+                  <p className=" mx-auto  py-5  opacity-95 w-11/12 indent-10 text-justify">
+                    <div className="flex justify-between text-center">
+                      <div className="text-[40px]  mx-2 w-[28%] space-y-4">
+                        <p className="text-base text-white">Frontend</p>
+                        <div className="flex justify-between">
+                          <span className="">
+                            <GrReactjs className="" />
+                          </span>
+                          <span>
+                            <SiRedux className="" />
+                          </span>
+                          <span>
+                            <SiJavascript className="" />
+                          </span>
+                        </div>
+                        <div>
+                          <span>
+                            <SiJquery className="" />
+                          </span>
+                        </div>
+                      </div>
+                      <div className="text-[40px]  mx-2 w-[28%] space-y-4">
+                        <p className="text-base text-white">Backend</p>
+                        <div className="flex justify-between">
+                          <span className="">
+                            <SiLaravel className="" />
+                          </span>
+                          <span>
+                            <DiYii className="" />
+                          </span>
+                          <span>
+                            <FaNodeJs className="" />
+                          </span>
+                        </div>
+                        <div>
+                          <span>
+                            <SiPhp className="" />
+                          </span>
+                        </div>
+                      </div>
+                      <div className="text-[40px]  mx-2 w-[28%] space-y-4">
+                        <p className="text-base text-white">Database</p>
+                        <div className="flex justify-between">
+                          <span className="">
+                            <SiMicrosoftsqlserver className="" />
+                          </span>
+                          <span>
+                            <SiMysql className="" />
+                          </span>
+                          <span>
+                            <DiFirebase className="" />
+                          </span>
+                        </div>
+                        <div>
+                          {/* <span>
+                            <SiJquery className="" />
+                          </span> */}
+                        </div>
+                      </div>
+                    </div>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
